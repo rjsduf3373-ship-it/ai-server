@@ -148,6 +148,14 @@ function render(products) {
       📤 이거 맞냐 친구한테 보내기 ㅋㅋ
     </button>
   `;
+
+  // 🔥 자동 스크롤 (핵심)
+  setTimeout(() => {
+    window.scrollTo({
+      top: document.getElementById("results").offsetTop - 20,
+      behavior: "smooth"
+    });
+  }, 100);
 }
 </script>
 
